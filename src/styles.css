@@ -1,0 +1,28 @@
+body {
+    background-color: ghostwhite;
+    font-family: "Helvetica";
+    margin: 0;
+}
+
+.navitem {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+}
+
+.navitem div {
+    flex: auto;
+    background-color: midnightblue;
+    color: white;
+    border: 2px solid midnightblue;
+    margin: 1px;
+    padding: 20px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    a:link {color: white; text-decoration: none;}
+    a:visited {color: white; text-decoration: none;}
+    a:hover {color: white; text-decoration: none;}
+    a:active {color: white; text-decoration: none;}
+}
