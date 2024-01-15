@@ -7,9 +7,10 @@ body {
 
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
-a:hover {text-decoration: underline;}
-a:active {text-decoration: underline;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
 
+/*TODO fix the navigation bar text disappearing*/
 .navitem {
     width: 100%;
     overflow: hidden;
@@ -47,6 +48,21 @@ a:active {text-decoration: underline;}
     float: left;
 }
 
+.content-box div:nth-child(2) {
+    width: 60%;
+}
+
+@media only screen and (max-width: 767px) {
+    .content-box div {
+        width: 100%;
+        float: none;
+    }
+
+    .content-box div:nth-child(2) {
+        width: 100%;
+    }
+}
+
 .main-img {
-    max-width: 75%;
+    max-width: 100%;
 }
