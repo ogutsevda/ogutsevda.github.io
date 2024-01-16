@@ -1,6 +1,6 @@
 body {
     background-color: ghostwhite;
-    font-family: "Helvetica";
+    font-family: "Apple SD Gothic Neo";
     margin: 0;
     padding-top: 0px;
 }
@@ -37,8 +37,8 @@ a:active {text-decoration: none;}
 .content-box {
     width: 100%;
     overflow: hidden;
-    padding: 100px;
     box-sizing: border-box;
+    padding: 100px;
 }
 
 .content-box div {
@@ -50,16 +50,29 @@ a:active {text-decoration: none;}
 
 .content-box div:nth-child(2) {
     width: 60%;
+    text-align: justify;
+    font-size: large;
 }
 
 @media only screen and (max-width: 767px) {
-    .content-box div {
+    .content-box {
         width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 100px 20px;
+        /*top and bottom paddings are 100px right and left paddings are 50px*/
+    }
+
+    .content-box div {
+        width: 100%!important;
+        max-width: 100%!important;
+        margin: 0!important;
         float: none;
     }
 
     .content-box div:nth-child(2) {
         width: 100%;
+        float: none;
     }
 }
 
