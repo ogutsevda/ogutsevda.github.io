@@ -10,28 +10,51 @@ a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
-/*TODO fix the navigation bar text disappearing*/
 .navitem {
     width: 100%;
-    overflow: hidden;
     position: fixed;
     display: flex;
+    text-align: center;
 }
 
 .navitem div {
-    background-color: midnightblue;
+    width: 20%;
+    flex: 1;
+    background-color: steelblue;
     color: white;
     border: 2px solid midnightblue;
     margin: 1px;
     padding: 20px;
-    width: 20%;
     float: left;
-    flex: 1;
     box-sizing: border-box;
+    border-radius: 10px;
     a:link {color: white; text-decoration: none;}
     a:visited {color: white; text-decoration: none;}
     a:hover {color: white; text-decoration: none;}
     a:active {color: white; text-decoration: none;}
+}
+.navitem div:hover {
+    background-color: midnightblue;
+}
+
+@media only screen and (max-width: 767px) {
+    .navitem {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .navitem div {
+        width: 50%;
+        flex: 1;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .navitem div:hover {
+        background-color: midnightblue;
+    }
 }
 
 .content-box {
@@ -59,7 +82,7 @@ a:active {text-decoration: none;}
         width: 100%;
         overflow: hidden;
         box-sizing: border-box;
-        padding: 100px 20px;
+        padding: 140px 20px;
         /*top and bottom paddings are 100px right and left paddings are 50px*/
     }
 
