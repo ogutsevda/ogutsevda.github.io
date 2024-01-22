@@ -1,10 +1,11 @@
 body {
     background-color: ghostwhite;
-    font-family: "Apple SD Gothic Neo";
+    font-family: "Apple SD Gothic Neo", "Fira Sans";
     margin: 0;
     padding-top: 0px;
 }
-/*TODO make font options for non-Apple devices*/
+
+/*TODO check font for non-Apple devices*/
 
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
@@ -21,6 +22,7 @@ a:active {text-decoration: none;}
 .navitem a {
     color: white;
     text-decoration: none;
+    display: block;
 }
 
 .navitem div {
@@ -109,4 +111,15 @@ a:active {text-decoration: none;}
 
 .main-img {
     max-width: 100%;
+}
+
+header {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: auto;
 }
