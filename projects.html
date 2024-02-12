@@ -10,14 +10,27 @@
 <body>
 
 <div class="navitem">
-    <div><a href="index.html">MAIN</a></div>
-    <div><a href="pubs.html">PUBLICATIONS</a></div>
-    <div><a href="projects.html">PROJECTS</a></div>
-    <div><a href="fun.html">FUN STUFF</a></div>
+    <a href="index.html"><div>MAIN</div></a>
+    <a href="pubs.html"><div>PUBLICATIONS</div></a>
+    <a href="projects.html"><div>PROJECTS</div></a>
+    <a href="fun.html"><div>FUN STUFF</div></a>
 </div>
 
-<!--TODO make "Projects" on top of the image with animation-->
 <header>
-    <img src="images/projects.jpeg" alt="Fun Stuff"/>
-    <h1>Projects</h1>
+    <div class="page-info">
+        <img src="images/projects.jpeg" alt="Projects"/>
+        <h1 id="page-name">Projects</h1>
+    </div>
+    <div class="line top-line"></div>
+    <div class="line bottom-line"></div>
 </header>
+
+<script>
+window.onload = function() {
+    var topLine = document.querySelector('.top-line');
+    var bottomLine = document.querySelector('.bottom-line');
+
+    topLine.style.width = '25%';
+    bottomLine.style.width = '25%';
+};
+</script>

@@ -1,11 +1,9 @@
 body {
     background-color: ghostwhite;
-    font-family: "Apple SD Gothic Neo", "Fira Sans";
+    font-family: "Apple SD Gothic Neo", "Fira Sans", "Ubuntu";
     margin: 0;
     padding-top: 0px;
 }
-
-/*TODO check font for non-Apple devices*/
 
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
@@ -23,17 +21,16 @@ a:active {text-decoration: none;}
     color: white;
     text-decoration: none;
     display: block;
+    flex-grow: 1;
 }
 
 .navitem div {
-    width: 20%;
     flex: 1;
     background-color: steelblue;
     color: white;
     border: 2px solid midnightblue;
     margin: 1px;
     padding: 20px;
-    float: left;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -53,10 +50,10 @@ a:active {text-decoration: none;}
     .navitem a {
         color: white;
         text-decoration: none;
+        flex-grow: 1;
     }
 
     .navitem div {
-        width: 25%;
         flex: 1;
         box-sizing: border-box;
         height: auto;
@@ -122,4 +119,38 @@ header {
 header img {
     width: 100%;
     height: auto;
+}
+
+/*TODO fix mobile view of page names*/
+
+.line {
+    position: absolute;
+    height: 2px;
+    background-color: midnightblue;
+    width: 0%;
+    transition: width 1.5s ease;
+}
+
+.top-line {
+    top: 20%;
+    left: 38%;
+}
+
+.bottom-line {
+    bottom: 70%;
+    right: 37%;
+}
+
+.page-info {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#page-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    color: midnightblue;
 }
