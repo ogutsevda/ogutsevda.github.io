@@ -25,6 +25,102 @@
     <div class="line bottom-line"></div>
 </header>
 
+<section class="timeline-wrapper">
+
+    <svg class="timeline-svg" viewBox="-10 -10 100 500" preserveAspectRatio="xMidYMin meet">
+        <defs>
+            <marker id="arrowhead" markerWidth="6" markerHeight="6" 
+                    refX="5" refY="3" orient="195"
+                    markerUnits="strokeWidth">
+              <path d="M 0 0 L 6 3 L 0 6 Z" fill="#D4AF37" />
+            </marker>
+        </defs>
+        <path d="
+          M 50 0
+          Q 300 50, 50 100
+          Q -250 150, 50 200
+          Q 300 250, 50 300
+          Q -250 350, 50 400
+          Q 300 450, 50 500
+        " 
+        fill="none"
+        stroke="#D4AF37"
+        stroke-width="2" 
+        stroke-dasharray="6, 6"
+        marker-start="url(#arrowhead)" />
+        <text x="25" y="0" fill="#D4AF37" font-size="10" font-weight="bold">time</text>
+    </svg>
+
+    <div class="marker right" style="top: 100px;">
+        <div class="date">March 2025</div>
+        <div class="pub-box">
+            <strong>Benchmarking Instance-Level Learnability and Interpretability in Multiple Instance Learning</strong><br><br>
+            <em>Under Review for ECML</em><br><br>
+            <img src="images/ecml.png" class="pub-img">
+            <p>
+                This study presents a unified benchmarking framework that evaluates MIL algorithms at both bag and instance levels, quantifying performance, learnability, and interpretability. Experiments on synthetic and digital pathology datasets reveal that although bag-level performance is robust across aggregation strategies, instance-level metrics are significantly affected by sample size and feature noise.
+            </p>
+        </div>
+    </div>
+
+    <div class="marker left" style="top: 200px;">
+        <div class="date">March 2025</div>
+        <div class="pub-box">
+            <a href="https://openreview.net/pdf?id=WpYdiLd5Fm">
+                <strong>On the Role of Structure in Hierarchical Graph Neural Networks</strong>
+              </a><br><br>              
+            <em>ICLR ICBINB Workshop</em><br><br>
+            <img src="images/iclr.png" class="pub-img">
+            <p>
+                TODO
+            </p>
+        </div>
+    </div>
+
+    <div class="marker right" style="top: 700px;">
+        <div class="date">September 2023</div>
+        <div class="pub-box">
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3603269.3604881">
+            <strong>Towards Practical and Scalable Molecular Networks</strong>
+            </a><br><br>
+            <em>SIGCOMM</em><br><br>
+            <img src="images/sigcomm.png" class="pub-img">
+            <p>
+                TODO
+            </p>
+        </div>
+    </div>
+
+    <div class="marker left" style="top: 800px;">
+        <div class="date">June 2023</div>
+        <div class="pub-box">
+            <a href="https://openreview.net/pdf?id=OqbGu3hdQb">
+            <strong>Contextual Combinatorial Multi-output GP Bandits with Group Constraints</strong>
+            </a><br><br>
+            <em>TMLR</em><br><br>
+            <img src="images/tmlr.png" class="pub-img">
+            <p>
+                TODO
+            </p>
+        </div>
+    </div>
+
+    <div class="marker right" style="top: 1300px;">
+        <div class="date">November 2021</div>
+        <div class="pub-box">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9659677">
+            <strong>A Performance Study Depending on Execution Times of Various Frameworks in Machine Learning Inference</strong>
+            </a><br><br>
+            <em>UYMS</em><br><br>
+            <img src="images/uyms.png" class="pub-img">
+            <p>
+                TODO
+            </p>
+        </div>
+    </div>
+
+</section>
+
 <script>
 window.onload = function() {
     var topLine = document.querySelector('.top-line');
