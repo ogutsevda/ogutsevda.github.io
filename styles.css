@@ -15,6 +15,7 @@ a:active {text-decoration: none;}
     position: fixed;
     display: flex;
     text-align: center;
+    z-index: 1000;
 }
 
 .navitem a {
@@ -215,4 +216,26 @@ header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pub-links {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+.pub-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.separator-line {
+    width: 2px;
+    height: 20px;
+    background-color: #000000;
 }
