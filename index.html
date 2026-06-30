@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-M9KV48G94M');
 </script>
     <title>Sevda Öğüt</title>
@@ -16,17 +15,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/greenS.png">
     <script src="https://kit.fontawesome.com/cdd5ebfbb8.js" crossorigin="anonymous"></script>
-    </head>
+</head>
 <body>
 
 <div class="navitem">
-    <a href="index.html"><div>HOME</div></a>
-    <a href="pubs.html"><div>PUBLICATIONS</div></a>
-    <a href="projects.html"><div>PROJECTS</div></a>
-    <a href="fun.html"><div>FUN STUFF</div></a>
+    <a href="#home"><div>HOME</div></a>
+    <a href="#publications"><div>PUBLICATIONS</div></a>
 </div>
 
-<div class="content-box">
+<div id="home" class="content-box">
     <div>
         <img src="images/sevda.jpeg" alt="Sevda Öğüt" class="main-img">
         <h1>Sevda Öğüt</h1>
@@ -81,20 +78,196 @@
         <br>
         <p>
             P.S. <br><br>
-            📝 If you are an EPFL student interested in a semester or thesis project, please check this 
+            📝 If you are an EPFL student interested in a semester or thesis project, please check this
             <a href="https://sti-zen.epfl.ch/projects">project page</a>.
             <br><br>
-            ☀️ If you would like to apply to EPFL for a summer internship, please refer to 
-            <a href="https://summer.epfl.ch/">Summer@EPFL</a> or the 
+            ☀️ If you would like to apply to EPFL for a summer internship, please refer to
+            <a href="https://summer.epfl.ch/">Summer@EPFL</a> or the
             <a href="https://eee.epfl.ch/program-at-a-glance/">E3 Program</a>.
             <br><br>
-            🎓 If you are interested in a PhD position, please check the 
-            <a href="https://www.epfl.ch/education/phd/edic-computer-and-communication-sciences/">EDIC program</a> 
-            or the glamorous 
+            🎓 If you are interested in a PhD position, please check the
+            <a href="https://www.epfl.ch/education/phd/edic-computer-and-communication-sciences/">EDIC program</a>
+            or the glamorous
             <a href="https://epic-guide.github.io/">EPIC Guide</a>.
-
         </p>
     </div>
 </div>
+
+<div id="publications" class="pubs-section">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="pub-entry">
+        <div class="pub-img-box">
+            <img src="images/iclr2.png" alt="GrapHist architecture">
+        </div>
+        <div class="pub-content">
+            <div class="pub-venue">arXiv 2025</div>
+            <strong class="pub-title">GrapHist: Large-Scale Graph Self-Supervised Learning for Histopathology</strong>
+            <p>This paper proposes GrapHist, a large-scale graph self-supervised learning framework for histopathology.</p>
+        </div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-img-box">
+            <img src="images/icml.png" alt="ICML architecture">
+        </div>
+        <div class="pub-content">
+            <div class="pub-venue">ICML Workshop Multi-modal Foundation Models and Large Language Models for Life Sciences 2025</div>
+            <strong class="pub-title">From Vision to Graph Self-Supervised Learning in Digital Pathology</strong>
+            <p>This paper demonstrates that graph-based self-supervision captures spatial structure in digital pathology patches and achieves similar performance to vision-based models using 12x fewer parameters. It also shows late multi-modal fusion of images and graphs improves upon single-modal baselines in digital pathology.</p>
+            <div class="pub-links">
+                <a href="https://openreview.net/pdf?id=6uTigj0bwJ" class="pub-link">
+                    <i class="fa-regular fa-file-lines fa-lg" style="color: #000000;"></i> Paper
+                </a>
+                <div class="separator-line"></div>
+                <a href="https://github.com/LTS4/CarlosHurtado-2025-sem-GraphVsVision" class="pub-link">
+                    <i class="fa-solid fa-code fa-lg" style="color: #000000;"></i> Code
+                </a>
+                <div class="separator-line"></div>
+                <a href="citations/citation-icml.html" class="pub-link">
+                    <i class="fa-solid fa-quote-right" style="color: #000000;"></i> Cite
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-img-box">
+            <img src="images/ecml.png" alt="MIL Benchmarking architecture">
+        </div>
+        <div class="pub-content">
+            <div class="pub-venue">arXiv 2025</div>
+            <strong class="pub-title">Benchmarking Instance-Level Learnability and Interpretability in Multiple Instance Learning</strong>
+            <p>This study presents a unified benchmarking framework that evaluates MIL algorithms at both bag and instance levels, quantifying performance, learnability, and interpretability. Experiments on synthetic and digital pathology datasets reveal that although bag-level performance is robust across aggregation strategies, instance-level metrics are significantly affected by sample size and feature noise.</p>
+            <div class="pub-links">
+                <a href="https://github.com/ogutsevda/instance-level" class="pub-link">
+                    <i class="fa-solid fa-code fa-lg" style="color: #000000;"></i> Code
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-img-box">
+            <img src="images/iclr.png" alt="GNN pooling architecture">
+        </div>
+        <div class="pub-content">
+            <div class="pub-venue"><a href="https://sites.google.com/view/icbinb-2025/home?authuser=0">ICLR Workshop I Can't Believe It's Not Better 2025</a></div>
+            <strong class="pub-title">On the Role of Structure in Hierarchical Graph Neural Networks</strong>
+            <p>This analysis shows that graph structure is learned in the initial convolutional layers, typically before any pooling schemes are applied, by perturbing the input graph structure at varying depths of the hierarchical graph neural network. In fact, many popular benchmarking datasets for graph-level tasks only exhibit limited structural information relevant to the prediction task, with structure-agnostic baselines often matching or outperforming more complex GNNs. These findings shed light on the empirical underperformance of graph pooling schemes and motivate the need for more structure-sensitive benchmarks and evaluation frameworks.</p>
+            <div class="pub-links">
+                <a href="https://openreview.net/pdf?id=WpYdiLd5Fm" class="pub-link">
+                    <i class="fa-regular fa-file-lines fa-lg" style="color: #000000;"></i> Paper
+                </a>
+                <div class="separator-line"></div>
+                <a href="https://github.com/LTS4/LucaSbicego-2024-sem-ReRethinkingPooling" class="pub-link">
+                    <i class="fa-solid fa-code fa-lg" style="color: #000000;"></i> Code
+                </a>
+                <div class="separator-line"></div>
+                <a href="citations/citation-iclr.html" class="pub-link">
+                    <i class="fa-solid fa-quote-right" style="color: #000000;"></i> Cite
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-img-box">
+            <img src="images/sigcomm.png" alt="MoMA architecture">
+        </div>
+        <div class="pub-content">
+            <div class="pub-venue"><a href="https://conferences.sigcomm.org/sigcomm/2023/">SIGCOMM 2023</a></div>
+            <strong class="pub-title">Towards Practical and Scalable Molecular Networks</strong>
+            <p>This work introduces MoMA, a molecular multiple access protocol that enables communication between multiple transmitters and a receiver in molecular networks. It addresses key challenges in molecular communication, such as lack of synchronization and high inter-symbol interference, and scales up to four transmitters in the synthetic testbed evaluation.</p>
+            <div class="pub-links">
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3603269.3604881" class="pub-link">
+                    <i class="fa-regular fa-file-lines fa-lg" style="color: #000000;"></i> Paper
+                </a>
+                <div class="separator-line"></div>
+                <a href="https://github.com/JMWinding/MoMA" class="pub-link">
+                    <i class="fa-solid fa-code fa-lg" style="color: #000000;"></i> Code
+                </a>
+                <div class="separator-line"></div>
+                <a href="citations/citation-sigcomm.html" class="pub-link">
+                    <i class="fa-solid fa-quote-right" style="color: #000000;"></i> Cite
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-img-box">
+            <img src="images/tmlr.png" alt="TMLR architecture">
+        </div>
+        <div class="pub-content">
+            <div class="pub-venue"><a href="https://jmlr.org/tmlr/index.html">TMLR 2023</a></div>
+            <strong class="pub-title">Contextual Combinatorial Multi-output GP Bandits with Group Constraints</strong>
+            <p>This paper proposes TCGP-UCB which is an algorithm for combinatorial contextual bandit problems with privacy-driven group constraints. It balances between maximizing cumulative super arm reward and satisfying group reward constraints and can be tuned to prefer one over the other, with information-theoretic regret bounds.</p>
+            <div class="pub-links">
+                <a href="https://openreview.net/pdf?id=OqbGu3hdQb" class="pub-link">
+                    <i class="fa-regular fa-file-lines fa-lg" style="color: #000000;"></i> Paper
+                </a>
+                <div class="separator-line"></div>
+                <a href="https://github.com/Bilkent-CYBORG/TCGP-UCB" class="pub-link">
+                    <i class="fa-solid fa-code fa-lg" style="color: #000000;"></i> Code
+                </a>
+                <div class="separator-line"></div>
+                <a href="citations/citation-tmlr.html" class="pub-link">
+                    <i class="fa-solid fa-quote-right" style="color: #000000;"></i> Cite
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pub-entry">
+        <div class="pub-img-box">
+            <img src="images/uyms.png" alt="UYMS architecture">
+        </div>
+        <div class="pub-content">
+            <div class="pub-venue"><a href="https://uyms21.ege.edu.tr/sempozyumProgrami.html">UYMS 2021</a></div>
+            <strong class="pub-title">A Performance Study Depending on Execution Times of Various Frameworks in Machine Learning Inference</strong>
+            <p>This study benchmarks inference latency across multiple machine learning frameworks using a 2-layer neural network model. The model is implemented in PyTorch and converted to TorchScript and ONNX formats. Inference is performed using LibTorch, ONNX Runtime, and TensorRT on both CPU and GPU. Results show that TensorRT with ONNX delivers the fastest performance, demonstrating its efficiency and potential for deployment scenarios.</p>
+            <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9659677" class="pub-link">
+                    <i class="fa-regular fa-file-lines fa-lg" style="color: #000000;"></i> Paper
+                </a>
+                <div class="separator-line"></div>
+                <a href="citations/citation-uyms.html" class="pub-link">
+                    <i class="fa-solid fa-quote-right" style="color: #000000;"></i> Cite
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="easter-trigger-wrapper">
+    <span id="easter-trigger" onclick="toggleEasterEgg()" title="psst...">🚲</span>
+</div>
+
+<div id="fun-stuff" class="fun-section">
+    <h2 class="section-title">Fun Stuff 🎉</h2>
+    <h3>Bikes I Have Named</h3>
+    <p>Check the following PDF to see the names I have given to my friends' bikes!</p>
+    <p>Let me know if you want your bike to be named and added to this list.</p>
+    <p><a href="files/bike_names.pdf" target="_blank">🚲 Ça Roule</a></p>
+</div>
+
+<script>
+function toggleEasterEgg() {
+    var funStuff = document.getElementById('fun-stuff');
+    var trigger = document.getElementById('easter-trigger');
+    if (funStuff.classList.contains('fun-section-visible')) {
+        funStuff.classList.remove('fun-section-visible');
+        trigger.style.transform = 'rotate(0deg)';
+    } else {
+        funStuff.classList.add('fun-section-visible');
+        trigger.style.transform = 'rotate(360deg)';
+        setTimeout(function() {
+            funStuff.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    }
+}
+</script>
+
 </body>
 </html>

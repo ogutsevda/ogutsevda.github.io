@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: ghostwhite;
     font-family: "Trebuchet MS";
@@ -238,4 +242,115 @@ header img {
     width: 2px;
     height: 20px;
     background-color: #000000;
+}
+
+/* Publications section */
+.pubs-section {
+    padding: 60px 80px 40px;
+    scroll-margin-top: 70px;
+}
+
+.section-title {
+    color: rgb(81, 31, 81);
+    font-size: 1.8em;
+    border-bottom: 3px solid #D4AF37;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.pub-entry {
+    display: flex;
+    gap: 20px;
+    border: 2px solid #D4AF37;
+    border-radius: 10px;
+    padding: 18px;
+    background: white;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.pub-img-box {
+    width: 20%;
+    flex-shrink: 0;
+}
+
+.pub-img-box img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.pub-content {
+    flex: 1;
+    text-align: justify;
+}
+
+.pub-venue {
+    color: #D4AF37;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 6px;
+}
+
+.pub-venue a {
+    color: #D4AF37;
+}
+
+.pub-title {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+    .pubs-section {
+        padding: 60px 20px 40px;
+    }
+
+    .pub-entry {
+        flex-direction: column;
+    }
+
+    .pub-img-box {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Easter egg */
+.easter-trigger-wrapper {
+    text-align: center;
+    padding: 30px;
+    font-size: 2em;
+    opacity: 0.25;
+    transition: opacity 0.3s;
+}
+
+.easter-trigger-wrapper:hover {
+    opacity: 1;
+}
+
+#easter-trigger {
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.6s ease;
+    user-select: none;
+}
+
+.fun-section {
+    display: none;
+    padding: 40px 80px 60px;
+    scroll-margin-top: 70px;
+}
+
+.fun-section-visible {
+    display: block;
+}
+
+@media only screen and (max-width: 767px) {
+    .fun-section {
+        padding: 40px 20px 60px;
+    }
 }
