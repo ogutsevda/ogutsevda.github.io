@@ -14,107 +14,83 @@ a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
-.navitem {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    text-align: center;
-    z-index: 1000;
-}
-
-.navitem a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    flex-grow: 1;
-}
-
-.navitem div {
-    flex: 1;
-    background-color: rgb(102, 51, 102);
-    color: white;
-    border: 2px solid rgb(81, 31, 81);
-    margin: 1px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.navitem div:hover {
-    background-color: rgb(81, 31, 81);
-}
-
-@media only screen and (max-width: 767px) {
-    .navitem {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 2.5vmin;
-    }
-
-    .navitem a {
-        color: white;
-        text-decoration: none;
-        flex-grow: 1;
-    }
-
-    .navitem div {
-        flex: 1;
-        box-sizing: border-box;
-        height: auto;
-    }
-
-    .navitem div:hover {
-        background-color: rgb(81, 31, 81);
-    }
-}
-
 .content-box {
-    width: 100%;
-    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
     box-sizing: border-box;
-    padding: 80px;
+    padding: 60px 40px 20px;
 }
 
-.content-box div {
-    width: 40%;
-    background-color: ghostwhite;
-    text-align: center;
-    float: left;
+.name-header {
+    margin-bottom: 20px;
 }
 
-.content-box div:nth-child(2) {
-    width: 60%;
+.name-title {
+    margin: 0;
+}
+
+.affiliation {
+    margin: 4px 0 0;
+}
+
+.intro-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 0;
     text-align: justify;
     font-size: large;
 }
 
+.intro-photo {
+    flex-shrink: 0;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    font-size: large;
+}
+
+.contact-row a {
+    color: rgb(81, 31, 81);
+}
+
 @media only screen and (max-width: 767px) {
     .content-box {
-        width: 100%;
-        overflow: hidden;
-        box-sizing: border-box;
-        padding: 100px 20px;
-        /*top and bottom paddings are 100px right and left paddings are 50px*/
+        padding: 100px 20px 20px;
     }
 
-    .content-box div {
-        width: 100%!important;
-        max-width: 100%!important;
-        margin: 0!important;
-        float: none;
+    .name-header {
+        text-align: center;
     }
 
-    .content-box div:nth-child(2) {
-        width: 100%;
-        float: none;
+    .intro-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .intro-photo {
+        width: 60%;
     }
 }
 
 .main-img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    max-height: 50%;
     border-radius: 50% / 35%;
     object-fit: cover;
     overflow: hidden;
@@ -244,9 +220,58 @@ header img {
     background-color: #000000;
 }
 
+/* News section */
+.news-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 40px 40px;
+    box-sizing: border-box;
+    scroll-margin-top: 70px;
+}
+
+.news-list {
+    border-top: 1px solid #ddd;
+}
+
+.news-entry {
+    display: flex;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-date {
+    flex-shrink: 0;
+    width: 120px;
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.news-text {
+    flex: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .news-section {
+        padding: 20px 20px 40px;
+    }
+
+    .news-entry {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .news-date {
+        width: auto;
+    }
+}
+
 /* Publications section */
 .pubs-section {
-    padding: 60px 80px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 40px 40px;
+    box-sizing: border-box;
     scroll-margin-top: 70px;
 }
 
@@ -306,7 +331,7 @@ header img {
 
 @media only screen and (max-width: 767px) {
     .pubs-section {
-        padding: 60px 20px 40px;
+        padding: 20px 20px 40px;
     }
 
     .pub-entry {
@@ -341,7 +366,10 @@ header img {
 
 .fun-section {
     display: none;
-    padding: 40px 80px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
     scroll-margin-top: 70px;
 }
 
